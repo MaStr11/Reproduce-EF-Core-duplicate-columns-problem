@@ -52,33 +52,7 @@ namespace ConsoleApp1.Migrations
 
                     b.Property<string>("Format");
 
-                    b.Property<string>("InvalidValueMessage");
-
                     b.Property<string>("Mask");
-
-                    b.Property<string>("MaskChar");
-
-                    b.Property<string>("MaskInvalidMessage");
-
-                    b.Property<double?>("Max");
-
-                    b.Property<double?>("Min");
-
-                    b.Property<int?>("Mode");
-
-                    b.Property<string>("Placeholder");
-
-                    b.Property<bool>("ShowClearButton");
-
-                    b.Property<int>("ShowMaskMode");
-
-                    b.Property<bool>("ShowSpinButtons");
-
-                    b.Property<bool>("Spellcheck");
-
-                    b.Property<double>("Step");
-
-                    b.Property<bool>("UseLargeSpinButtons");
 
                     b.ToTable("EditorOptionsNumberBox");
 
@@ -89,37 +63,10 @@ namespace ConsoleApp1.Migrations
                 {
                     b.HasBaseType("ConsoleApp1.EditorOptionsBase");
 
-                    b.Property<bool>("AutoResizeEnabled");
-
                     b.Property<string>("Mask")
                         .HasColumnName("EditorOptionsTextArea_Mask");
 
-                    b.Property<string>("MaskChar")
-                        .HasColumnName("EditorOptionsTextArea_MaskChar");
-
-                    b.Property<string>("MaskInvalidMessage")
-                        .HasColumnName("EditorOptionsTextArea_MaskInvalidMessage");
-
-                    b.Property<double?>("MaxHeight");
-
                     b.Property<int?>("MaxLength");
-
-                    b.Property<double?>("MinHeight");
-
-                    b.Property<int?>("Mode")
-                        .HasColumnName("EditorOptionsTextArea_Mode");
-
-                    b.Property<string>("Placeholder")
-                        .HasColumnName("EditorOptionsTextArea_Placeholder");
-
-                    b.Property<bool>("ShowClearButton")
-                        .HasColumnName("EditorOptionsTextArea_ShowClearButton");
-
-                    b.Property<int>("ShowMaskMode")
-                        .HasColumnName("EditorOptionsTextArea_ShowMaskMode");
-
-                    b.Property<bool>("Spellcheck")
-                        .HasColumnName("EditorOptionsTextArea_Spellcheck");
 
                     b.ToTable("EditorOptionsTextArea");
 
@@ -132,27 +79,6 @@ namespace ConsoleApp1.Migrations
 
                     b.Property<string>("Mask")
                         .HasColumnName("EditorOptionsTextBox_Mask");
-
-                    b.Property<string>("MaskChar")
-                        .HasColumnName("EditorOptionsTextBox_MaskChar");
-
-                    b.Property<string>("MaskInvalidMessage")
-                        .HasColumnName("EditorOptionsTextBox_MaskInvalidMessage");
-
-                    b.Property<int?>("Mode")
-                        .HasColumnName("EditorOptionsTextBox_Mode");
-
-                    b.Property<string>("Placeholder")
-                        .HasColumnName("EditorOptionsTextBox_Placeholder");
-
-                    b.Property<bool>("ShowClearButton")
-                        .HasColumnName("EditorOptionsTextBox_ShowClearButton");
-
-                    b.Property<int>("ShowMaskMode")
-                        .HasColumnName("EditorOptionsTextBox_ShowMaskMode");
-
-                    b.Property<bool>("Spellcheck")
-                        .HasColumnName("EditorOptionsTextBox_Spellcheck");
 
                     b.ToTable("EditorOptionsTextBox");
 
